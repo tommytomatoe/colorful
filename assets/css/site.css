@@ -145,10 +145,10 @@ body {
 }
 
 /* Change heart outline to full heart */
-.heart:hover .fa-heart-o:before {
+.heart-icon:hover .fa-heart-o:before {
   content: "\f004";
 }
-.heart:focus {
+.heart-icon:focus {
   outline: none;
 }
 .cat-box {
