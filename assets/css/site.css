@@ -1,0 +1,199 @@
+/*
+ * Globals
+ */
+
+/* Fonts */
+@font-face {
+  font-family: 'DINPro';
+  src: url('../fonts/DINPro-Light.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'DINPro';
+  src: url('../fonts/DINPro-Medium.otf');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'DINPro';
+  src: url('../fonts/DINPro-Bold.otf');
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #fff;
+}
+
+/* Custom default button */
+.btn-default,
+.btn-default:hover,
+.btn-default:focus {
+  color: #333;
+  text-shadow: none; /* Prevent inheritence from `body` */
+  background-color: #fff;
+  border: 1px solid #fff;
+}
+
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+  height: 100%;
+  background-color: #333;
+}
+body {
+  color: #fff;
+  font-family: "DINPro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: center;
+  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+}
+
+.site-wrapper {
+  width: 100%;
+  height: 100%; /* For at least Firefox */
+  min-height: 100%;
+  -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+          box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+}
+.site-main-content {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Padding for spacing */
+.inner {
+  padding: 30px;
+}
+
+
+/*
+ * Header
+ */
+.site-header-brand {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+  .site-header-brand {
+    float: left;
+  }
+}
+
+
+/*
+ * Footer
+ */
+
+.site-footer {
+  color: #999;
+  text-align: center;
+  width: 100%;
+  padding: 30px;
+  position: fixed;
+  bottom: 0;
+}
+.site-footer p:last-child {
+  margin-bottom: 0;
+}
+.footer-links {
+  padding-left: 0px;
+  display: inline-block;
+}
+.footer-links-ul > li {
+  display: inline-block;
+}
+.footer-links-ul > li + li {
+  margin-left: 20px;
+}
+.footer-links-ul > li > a {
+  padding-right: 0;
+  padding-left: 0;
+  color: #fff; /* IE8 proofing */
+  color: rgba(255,255,255,.75);
+}
+.footer-links-ul > li > a:hover,
+.footer-links-ul > li > a:focus {
+  background-color: transparent;
+  border-bottom-color: #a9a9a9;
+  border-bottom-color: rgba(255,255,255,.25);
+}
+.footer-links-ul > .active > a,
+.footer-links-ul > .active > a:hover,
+.footer-links-ul > .active > a:focus {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+.footer-links-ul .fa {
+  padding-right: 5px;
+}
+
+.love {
+  float: right;
+}
+
+/* Change heart outline to full heart */
+.heart:hover .fa-heart-o:before {
+  content: "\f004";
+}
+.heart:focus {
+  outline: none;
+}
+.cat-box {
+  display: none;
+  position: fixed;
+  width: 300px;
+  height: 300px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+}
+
+.cat-box img {
+  width: 100%;
+  height: auto;
+}
+
+/*
+ * Affix and center
+ */
+
+@media (min-width: 768px) {
+  /* Pull out the header and footer */
+  .site-header {
+    position: fixed;
+    top: 0;
+  }
+  .site-footer {
+    position: fixed;
+    bottom: 0;
+  }
+  /* Handle the widths */
+  .site-header,
+  .site-footer,
+  .site-main-content {
+    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+  }
+}
+
+@media (min-width: 992px) {
+  .site-header,
+  .site-footer,
+  .site-main-content {
+    width: 100%;
+  }
+}
