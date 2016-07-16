@@ -4,20 +4,31 @@
 
 /* Fonts */
 @font-face {
-  font-family: 'DINPro';
-  src: url('../fonts/DINPro-Light.otf');
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat-Regular.otf');
   font-weight: normal;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat-Hairline.otf');
+  font-weight: 100;
   font-style: normal;
 }
 @font-face {
-  font-family: 'DINPro';
-  src: url('../fonts/DINPro-Medium.otf');
-  font-weight: 500;
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat-UltraLight.otf');
+  font-weight: 200;
   font-style: normal;
 }
 @font-face {
-  font-family: 'DINPro';
-  src: url('../fonts/DINPro-Bold.otf');
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat-Light.otf');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat-Bold.otf');
   font-weight: bold;
   font-style: normal;
 }
@@ -51,10 +62,25 @@ body {
 }
 body {
   color: #fff;
-  font-family: "DINPro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-align: center;
   text-shadow: 0 1px 3px rgba(0,0,0,.5);
 }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+h1 {
+  font-weight: 100;
+}
+h3 {
+  font-weight: 300;
+}
+
 
 .site-wrapper {
   width: 100%;
@@ -62,6 +88,7 @@ body {
   min-height: 100%;
   -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
           box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+  background-color: #039ACC;
 }
 .site-main-content {
   position: absolute;
@@ -71,6 +98,7 @@ body {
   margin-right: auto;
   margin-left: auto;
 }
+
 
 /* Padding for spacing */
 .inner {
@@ -104,6 +132,7 @@ body {
   padding: 30px;
   position: fixed;
   bottom: 0;
+  font-weight: 200;
 }
 .site-footer p:last-child {
   margin-bottom: 0;
