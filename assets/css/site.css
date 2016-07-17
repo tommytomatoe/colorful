@@ -65,6 +65,7 @@ body {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-align: center;
   text-shadow: 0 1px 3px rgba(0,0,0,.5);
+  background-color: #039ACC;
 }
 h1,
 h2,
@@ -81,7 +82,6 @@ h3 {
   font-weight: 300;
 }
 
-
 .site-wrapper {
   width: 100%;
   height: 100%; /* For at least Firefox */
@@ -90,19 +90,15 @@ h3 {
           box-shadow: inset 0 0 100px rgba(0,0,0,.5);
   background-color: #039ACC;
 }
+.site-header {
+  padding: 30px;
+}
 .site-main-content {
   position: absolute;
-  top: 50%;
+  top: 61.8%;
   width: 100%;
   text-align: center;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-
-/* Padding for spacing */
-.inner {
-  padding: 30px;
+  margin-top: -40px;
 }
 
 
@@ -126,10 +122,9 @@ h3 {
  */
 
 .site-footer {
-  color: #999;
   text-align: center;
+  height: 60px;
   width: 100%;
-  padding: 30px;
   position: fixed;
   bottom: 0;
   font-weight: 200;
@@ -137,9 +132,21 @@ h3 {
 .site-footer p:last-child {
   margin-bottom: 0;
 }
+.vertical-center {
+  top: 50%;
+  transform: perspective(1px) translateY(-50%);
+}
 .footer-links {
-  padding-left: 0px;
   display: inline-block;
+  position: relative;
+  width: 50%;
+}
+.footer-links-ul {
+  padding-left: 0px;
+  margin-bottom: 0px;
+}
+.footer-links-ul .fa {
+  padding-right: 5px;
 }
 .footer-links-ul > li {
   display: inline-block;
@@ -165,11 +172,24 @@ h3 {
   color: #fff;
   border-bottom-color: #fff;
 }
-.footer-links-ul .fa {
-  padding-right: 5px;
+.city-text {
+  float: left;
+  padding-left: 30px;
+  position: relative;
+  width: 25%;
 }
-
+.made-in-knoxville {
+  text-transform: uppercase;
+  float: left;
+  font-weight:
+}
 .love {
+  float: right;
+  padding-right: 30px;
+  position: relative;
+  width: 25%;
+}
+.heart-icon {
   float: right;
 }
 
@@ -204,7 +224,7 @@ h3 {
 @media (min-width: 768px) {
   /* Pull out the header and footer */
   .site-header {
-    position: fixed;
+    position: absolute;
     top: 0;
   }
   .site-footer {
@@ -224,5 +244,8 @@ h3 {
   .site-footer,
   .site-main-content {
     width: 100%;
+  }
+  .site-footer {
+    height: 90px;
   }
 }
