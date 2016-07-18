@@ -181,6 +181,7 @@ h3 {
   width: 25%;
 }
 .made-in-knoxville {
+  visibility: hidden;
   text-transform: uppercase;
   float: left;
   font-weight:
@@ -238,6 +239,9 @@ h3 {
   .site-footer,
   .site-main-content {
     width: 100%; /* Must be percentage or pixels for horizontal alignment */
+  }
+  .made-in-knoxville {
+    visibility: visible;
   }
 }
 
